@@ -1,0 +1,16 @@
+@mixin display-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin max--size{
+    height: 100vh;
+    width: 100%;
+}
+@mixin border--radius__5px{
+    border-radius: 5px;
+}
+@mixin input--size{
+    height: 3rem;
+    width: 26rem;
+}

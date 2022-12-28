@@ -1,0 +1,55 @@
+@import './mixins/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+}
+body{
+    @include max--size;
+    box-sizing: border-box;
+}
+main{
+    @include display-center;
+    @include max--size;
+    background: rgba(255, 0, 0, 0.535);
+    #title--div{
+        width: 35rem;
+        h1{
+            margin-bottom: 2rem;
+            font-family: 'Roboto', sans-serif;
+            line-height: 4rem;
+            font-size: 4rem;
+            color: white;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+    }
+    #form--div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40rem;
+        form{
+            @include display-center;
+            @include border--radius__5px;
+            flex-direction: column;
+            height: 27rem;
+            width: 32rem;
+            background-color: white;
+            input{
+                @include input--size;
+                @include border--radius__5px;
+                border: 1px solid black;
+                margin: 0.5rem 0;
+            }
+            button{
+                @include border--radius__5px;
+                @include input--size;
+                border: 1px solid black;
+                color: white;
+                background-color: rgb(95, 167, 95);
+            }
+        }
+    }
+}
