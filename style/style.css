@@ -7,6 +7,7 @@ body {
   height: 100vh;
   width: 100%;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -22,7 +23,6 @@ main #title--div {
 }
 main #title--div h1 {
   margin-bottom: 2rem;
-  font-family: "Roboto", sans-serif;
   line-height: 4rem;
   font-size: 4rem;
   color: white;
@@ -36,28 +36,58 @@ main #form--div {
   align-items: center;
   width: 40rem;
 }
+main #form--div #try__free__div p {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  width: 32rem;
+  height: 4rem;
+  color: white;
+  background-color: rgb(66, 37, 182);
+  box-shadow: 0px 15px 10px -15px #111;
+}
+main #form--div #try__free__div span {
+  margin-right: 0.2rem;
+  font-weight: bold;
+}
 main #form--div form {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   flex-direction: column;
-  height: 27rem;
+  height: 29rem;
   width: 32rem;
   background-color: white;
 }
 main #form--div form input {
-  height: 3rem;
-  width: 26rem;
+  height: 3.5rem;
+  width: 26.5rem;
   border-radius: 5px;
-  border: 1px solid black;
-  margin: 0.5rem 0;
+  border: 1px solid rgb(157, 157, 157);
+  margin: 0.7rem 0;
+}
+main #form--div form ::-moz-placeholder {
+  padding-left: 1.5rem;
+}
+main #form--div form :-ms-input-placeholder {
+  padding-left: 1.5rem;
+}
+main #form--div form ::placeholder {
+  padding-left: 1.5rem;
 }
 main #form--div form button {
   border-radius: 5px;
-  height: 3rem;
-  width: 26rem;
-  border: 1px solid black;
+  height: 3.5rem;
+  width: 26.7rem;
+  text-transform: uppercase;
+  border: none;
   color: white;
-  background-color: rgb(95, 167, 95);
+  background-color: rgb(143, 234, 143);
+  margin-bottom: 0.8rem;
+}
+main #form--div form p {
+  font-size: 0.7rem;
 }/*# sourceMappingURL=style.css.map */
